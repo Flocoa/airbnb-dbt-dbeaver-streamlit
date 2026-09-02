@@ -1,0 +1,13 @@
+# Cache et logs des agents IA
+.agent/
+.agents/
+.roo/
+.cursor/
+.windsurf/
+
+# Historique des chats et tâches locales
+*.chat
+*.agent.log
+
+# Fichiers de data csv
+*.csv
