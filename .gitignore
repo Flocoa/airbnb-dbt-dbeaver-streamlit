@@ -21,3 +21,4 @@ logs/
 
 # github agent
 .github
+.github/agents
