@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: raw_data
+    schema: raw
+    tables:
+      - name: raw_listings
+        description: "Table contenant les données brutes des annonces Airbnb."
+      - name: raw_calendar
+        description: "Table contenant les données brutes du calendrier des annonces Airbnb."
+      - name: raw_neighbourhoods
+        description: "Table contenant les données brutes des quartiers Airbnb."
+      - name: raw_reviews
+        description: "Table contenant les données brutes des avis Airbnb."

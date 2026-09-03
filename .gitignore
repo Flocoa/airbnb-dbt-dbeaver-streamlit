@@ -10,4 +10,11 @@
 *.agent.log
 
 # Fichiers de data csv
+data/
 *.csv
+
+# dbt
+
+target/
+dbt_packages/
+logs/

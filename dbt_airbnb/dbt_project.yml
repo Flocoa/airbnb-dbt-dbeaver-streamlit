@@ -1,0 +1,31 @@
+
+name: 'airbnb_dbt'
+version: '1.0.0'
+
+profile: 'airbnb_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+models:
+  airbnb_dbt:
+    staging:
+      +materialized: view
+      +schema: stg
+      +tags: ['staging']
+    intermediate:
+      +materialized: view
+      +schema: int
+      +tags: ['intermediate']
+    marts:
+      +materialized: table
+      +schema: mart
+      +tags: ['marts']

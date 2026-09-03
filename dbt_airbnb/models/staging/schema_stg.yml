@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_listing
+    description: Nettoyage de la table des listings
+  - name: stg_calendar
+    description: Nettoyage de la table du calendrier
+  - name: stg_reviews
+    description: Nettoyage de la table des avis
+  - name: stg_neighbourhoods
+    description: Nettoyage de la table des quartiers
